@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuartzDotNet.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,7 +12,16 @@ namespace QuartzDotNet.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            List<A> list = new List<A>();
+            list.Add(new A() { Name = "sh", Roll = "233" });
+            list.Add(new A() { Name = "sh2", Roll = "233" });
+            list.Add(new A() { Name = "sh3", Roll = "233" });
+
+          //  ViewBag.Name = list;
+
+
+
+            return View(list);
         }
 
         public ActionResult About()

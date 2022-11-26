@@ -225,6 +225,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\A.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\MyJob.cs" />
     <Compile Include="Models\MyScheduler.cs" />
